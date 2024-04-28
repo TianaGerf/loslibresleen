@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Los Libres Leen</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="#inicio"><img src="./images/logosinfondo.png" alt="LosLibresLeen"></a>
+        </div>
+
+        <nav class="">
+            <ul>
+                <a href="">
+                    <li>INICIO</li>
+                </a>
+                <a href="#reseñas">
+                    <li>RESEÑAS</li>
+                </a>
+                <a href="#generos">
+                    <li>GÉNEROS</li>
+                </a>
+                <a href="#beneficios">
+                    <li>BENEFICIOS</li>
+                </a>
+                <a href="#contacto">
+                    <li>CONTACTO</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div>
+            <img src="./images/fondoinicio.jpg" alt="">
+        </div>
+        <div class="container-fluid bienvenida">
+            <h1>Bienvenido a Los Libres leen,</h1>
+            <p>tu destino literario definitivo, donde la pasión por los libros cobra vida a través de reseñas,
+                recomendaciones cuidadosamente seleccionadas y exploraciones en los vastos mundos de la literatura.<br>
+                Sumérgete en un océano de historias mientras exploramos juntos autores, géneros y obras que despiertan
+                la mente y alimentan el alma. <strong>¡Únete a nuestra comunidad de lectores ávidos y descubre tu
+                    próxima aventura literaria!</strong></p>
+        </div>
+    </section>
+
+    <div class="titulo-reseñas" id="reseñas">
+        <h1>Reseñas</h1>
+    </div>
+    <div class="contenedor container-fluid">
+        <div class="card" style="width: 18rem;">
+            <img class="zoom" src="./images/comediabook.png" class="card-img-top" alt="Hasta arriba">
+            <div class="card-body">
+                <h5 class="card-title">Hasta arriba</h5>
+                <p class="card-text">William Ernest Bowman<br>
+                    <hr>
+                    Hasta arriba es un clásico del humor británico y libro de culto para varias generaciones de
+                    alpinistas, además de un referente indiscutible de la literatura de aventuras del siglo XX.
+                </p>
+                <div id="contenido1" style="display: none;">
+                    <p class="card-text">En la década de los años cincuenta del pasado siglo, un grupo de montañeros
+                        británicos se dispone a conquistar la cumbre más alta de la Tierra, el monte Kurda Rarí, que
+                        entendemos es el Everest y sigue inexpugnado en esos momentos.
+                        A partir de ahí, cualquier viso de realidad y racionalidad no existen. Tanto los personajes, las
+                        actuaciones, como el entorno, se apartan totalmente del sentido común y la obra pasa a ser
+                        absolutamente disparatada, escrita en clave de humor.</p>
+                </div>
+                <button onclick='muestra_oculta("contenido1", "btnVerMas1")' class="btn btn-light btn-sm mt-2"
+                    id="btnVerMas1">Ver más</button>
+
+                <ul class="ficha">
+                    <li class="list-group-item"><strong>Páginas:</strong> 192</li>
+                    <li class="list-group-item"><strong>Género:</strong> #comedia #clásicos</li>
+                    <li class="list-group-item"><strong>Calificación:</strong> ⭐⭐⭐⭐</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="zoom" src="./images/poemasbook.png" class="card-img-top" alt="El sol y sus flores">
+            <div class="card-body">
+                <h5 class="card-title">El sol y sus flores</h5>
+                <p class="card-text">Rupi Kaur <br>
+                    <hr>
+                    Segundo y poderoso poemario de esta autora best seller. Dividido en cinco movimientos (marchitarse;
+                    caer; enraizar; crecer; florecer), este poemario se desliza desde las profundidades de un desamor y
+                    el dolor que conlleva hasta la fuerza y la alegría que pueden florecer tras ese sufrimiento.
+                </p>
+                <div id="contenido2" style="display: none;">
+                    <p class="card-text">Un vibrante y trascendental viaje sobre el crecimiento y la curación, la
+                        descendencia y el honor por las raíces de uno, la expatriación y la búsqueda del hogar en uno
+                        mismo.</p>
+                </div>
+                <button onclick='muestra_oculta("contenido2", "btnVerMas2")' class="btn btn-light btn-sm mt-2"
+                    id="btnVerMas2">Ver más</button>
+                <ul class="ficha">
+                    <li class="list-group-item"><strong>Páginas:</strong> 248</li>
+                    <li class="list-group-item"><strong>Género:</strong> #poemario</li>
+                    <li class="list-group-item"><strong>Calificación:</strong> ⭐⭐⭐⭐⭐</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="zoom" src="./images/thrillerbook.png" class="card-img-top" alt="La pareja de al lado">
+            <div class="card-body">
+                <h5 class="card-title">La pareja de al lado</h5>
+                <p class="card-text">Shari Lapena<br>
+                    <hr>
+                    Tu vecina te dijo que preferiría que no llevaras a tu bebé de seis meses a la cena. No es nada
+                    personal, simplemente no soporta sus llantos. Tu marido estaba de acuerdo. Después de todo, viven en
+                    la casa de al lado. Podían llevar el monitor infantil y turnarse para pasar a verla cada media hora.
+                    Tu hija dormía cuando fuiste a comprobar por última vez.
+                </p>
+                <div id="contenido3" style="display: none;">
+                    <p class="card-text">Sin embargo, en este momento, mientras subes corriendo las escaleras hasta su
+                        habitación envuelta en un absoluto silencio, confirmas que tu peor pesadilla se ha hecho
+                        realidad: ha desaparecido. Nunca antes habías tenido que llamar a la policía. Ahora están en tu
+                        casa y quién sabe lo que pueden llegar a descubrir. ¿De qué serías capaz cuando has sobrepasado
+                        tus límites?</p>
+                </div>
+                <button onclick='muestra_oculta("contenido3", "btnVerMas3")' class="btn btn-light btn-sm mt-2"
+                    id="btnVerMas3">Ver más</button>
+                <ul class="ficha">
+                    <li class="list-group-item"><strong>Páginas:</strong> 390</li>
+                    <li class="list-group-item"><strong>Género:</strong> #thriller #misterio #investigación</li>
+                    <li class="list-group-item"><strong>Calificación:</strong> ⭐⭐⭐⭐</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="zoom" src="./images/romancebook.png" class="card-img-top" alt="Amor y gelato">
+            <div class="card-body">
+                <h5 class="card-title">Amor y gelato</h5>
+                <p class="card-text">Jenna Evans Welch<br>
+                    <hr>
+                    La gente va a Italia en busca del amor y del helado, pero a veces allí descubren mucho más.
+                    Lina va a pasar el verano en la Toscana, pero desafortunadamente no está de humor para el idílico y
+                    soleado paisaje italiano.
+                </p>
+                <div id="contenido4" style="display: none;">
+                    <p class="card-text">Solo ha ido porque el último deseo de su madre antes de morir fue que conociese
+                        a su padre. Aunque, ¿qué clase de padre desaparece durante dieciséis años? Lo único que Lina
+                        quiere es volver a casa. Pero cuando cae en sus manos un antiguo diario de su madre, Lina se
+                        adentrará en un mundo de parajes mágicos, arte, romance y panaderías escondidas que la inspirará
+                        a reseguir el camino que recorrió su madre tantos años atrás, para desenterrar un secreto que
+                        clama salir a la luz. Por cierto, el siempre adorable Ren resulta ser un buen compañero de
+                        viaje.</p>
+                </div>
+                <button onclick='muestra_oculta("contenido4", "btnVerMas4")' class="btn btn-light btn-sm mt-2"
+                    id="btnVerMas4">Ver más</button>
+                <ul class="ficha">
+                    <li class="list-group-item"><strong>Páginas:</strong> 390</li>
+                    <li class="list-group-item"><strong>Género:</strong> #thriller #misterio #investigación</li>
+                    <li class="list-group-item"><strong>Calificación:</strong> ⭐⭐⭐⭐</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="frase">
+        <p>"La palabra libro está muy cercana a la palabra libre; solo la letra final las distancia: la o de libro y la
+            e de libre. No sé si ambos vocablos vienen del latín liber («libro»), pero lo cierto es que se complementan
+            perfectamente; el libro es uno de los instrumentos creados por el hombre para hacernos libres".</p>
+        <h5>SERGIO PITOL</h5>
+    </section>
+
+    <div>
+        <h1 id="generos" class="titulo-generos">Explora distintos géneros y estilos</h1>
+    </div>
+    <div class="container-fluid caja2">
+        <div class="caja2">
+            <div class="generos">
+                <img src="./images/thriller.png" alt="Thriller">
+                <h3>Thriller</h3>
+                <p>Los thrillers son historias llenas de suspenso, intriga y emoción. Suelen centrarse en situaciones de peligro y en resolver misterios o crímenes. Los lectores se mantienen al borde de sus asientos mientras siguen los giros y vueltas de la trama.</p>
+            </div>
+            
+            <div class="generos">
+                <img src="./images/mistery.png" alt="">
+                <h3>Misterio</h3>
+                <p>Los misterios son historias que giran en torno a resolver enigmas y descubrir la verdad detrás de eventos inexplicables. Los lectores son llevados a lo largo de una investigación emocionante mientras intentan resolver el misterio junto con los personajes.</p>
+            </div>
+            
+            <div class="generos">
+                <img src="./images/romance.png" alt="">
+                <h3>Romance</h3>
+                <p>El romance se centra en las relaciones personales y el amor entre los personajes principales. Estas historias suelen estar llenas de pasión, tensión emocional y momentos románticos que mantienen a los lectores cautivados.</p>
+            </div>
+            
+            <div class="generos">
+                <img src="./images/fantasy.png" alt="">
+                <h3>Fantasía</h3>
+                <p>La fantasía transporta a los lectores a mundos imaginarios llenos de magia, criaturas fantásticas y aventuras épicas. Estos libros suelen explorar temas como la lucha entre el bien y el mal, el destino y el heroísmo.</p>
+            </div>
+            
+            <div class="generos">
+                <img src="./images/poem.png" alt="">
+                <h3>Poesía</h3>
+                <p>La poesía es un género literario que utiliza el lenguaje de manera artística y emocional para expresar ideas, sentimientos y experiencias. Los poemas pueden ser cortos o largos, y pueden abordar una amplia gama de temas.</p>
+            </div>
+            
+            <div class="generos">
+                <img src="./images/cf.png" alt="">
+                <h3>Ciencia Ficción</h3>
+                <p>La ciencia ficción transporta a los lectores a futuros alternativos, mundos alienígenas y avances tecnológicos imaginativos. Estas historias exploran temas científicos y filosóficos, ofreciendo nuevas perspectivas sobre la humanidad y el universo.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contenedor-background">
+        <img src="./images/background.jpg" alt="">
+        <div class="texto-superpuesto">
+            <h2>Descubre miles de historias</h2>
+        </div>
+    </div>
+    
+
+
+
+    <section id="beneficios">
+        <div class="titulo-reseñas">
+            <h1>Beneficios que te aportan la lectura</h1>
+        </div>
+        <div class="caja">
+            <img class="zoom" src="./images/explore1.png" alt="">
+            <h1>Explora Nuevos Mundos</h1>
+            <p>Sumérgete en aventuras épicas, viajes a tierras lejanas y encuentros con personajes fascinantes. La
+                lectura te transporta a mundos completamente nuevos, donde puedes escapar de la realidad y explorar
+                lugares y culturas diferentes. Descubre la magia de la fantasía, la emoción de la ciencia ficción y la
+                belleza de la literatura contemporánea mientras expandes tus horizontes a través de la lectura.</p>
+        </div>
+        <div class="caja">
+            <img class="zoom" src="./images/empathy.png" alt="">
+            <h1>Desarrolla la Empatía y Comprensión</h1>
+            <p>La literatura juvenil ofrece una ventana al mundo de los demás, permitiéndote experimentar diferentes
+                perspectivas y comprender mejor las emociones y experiencias de los demás. Al sumergirte en las vidas de
+                los personajes, desarrollas empatía y compasión, habilidades fundamentales para navegar en un mundo
+                diverso y complejo. La lectura te ayuda a entender mejor a los demás y a ti mismo.</p>
+        </div>
+        <div class="caja">
+            <img class="zoom" src="./images/think.png" alt="">
+            <h1>Estimulación del Pensamiento Crítico y la Imaginación</h1>
+            <p>La lectura desafía tu mente y estimula tu imaginación de formas que ningún otro medio puede igualar. Te
+                invita a reflexionar sobre temas profundos, cuestionar tus propias creencias y desarrollar un
+                pensamiento crítico sólido. A través de la lectura, puedes explorar ideas nuevas y creativas, expandir
+                tu mente y desarrollar habilidades analíticas que te servirán en todas las áreas de la vida.</p>
+        </div>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div class="footer" id="contacto">
+            <img src="./images/logosinfondofooter.png" class="logo-footer" alt="LosLibresLeen">
+            <h3>¡Seguinos en Instagram!</h3>
+            <p>Únete a la comunidad</p>
+            <div class="redes-footer">
+                <a href="https://www.instagram.com/loslibresleen?igsh=MTBpc2QyM2ozM3Zvag==" target="_blank"><img
+                        src="./images/instagram.png" alt="LosLibresLeen"></a>
+                <p>@loslibresleen</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
