@@ -307,6 +307,277 @@ footer {
     margin-top: 10px;
 }
 
+/* ========================================
+   ANIMACIONES CSS
+   ======================================== */
+
+/* Keyframes - Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes - Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes - Slide In Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes - Slide In Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes - Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes - Bounce In */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes - Float */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Keyframes - Pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Clases de animación */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.8s ease-out;
+}
+
+/* Clases para animaciones con scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.animate-on-scroll.animated {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Delays para animaciones escalonadas */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Mejoras a componentes existentes con animaciones */
+
+/* Header - Transiciones suaves */
+header {
+    animation: fadeIn 0.6s ease-out;
+}
+
+header ul li {
+    transition: all 0.3s ease;
+}
+
+header ul li:hover {
+    transform: translateY(-2px);
+}
+
+/* Logo con efecto float sutil */
+header img {
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Cards con hover mejorado */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(255, 241, 2, 0.2);
+}
+
+/* Géneros con animación al hover */
+.generos {
+    transition: transform 0.3s ease;
+}
+
+.generos:hover {
+    transform: translateY(-8px);
+}
+
+.generos img {
+    transition: all 0.3s ease;
+}
+
+.generos img:hover {
+    box-shadow: 0px 0px 20px 4px #FFF102;
+    transform: scale(1.05);
+}
+
+/* Botones con hover mejorado */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Zoom mejorado para imágenes */
+.zoom {
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}
+
+/* Frase con animación de entrada */
+.frase {
+    transition: background-color 0.3s ease;
+}
+
+/* Footer con fade in */
+footer {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Instagram icon con pulse al hover */
+.redes-footer img {
+    transition: transform 0.3s ease;
+}
+
+.redes-footer img:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Hero text con animación */
+.texto-superpuesto {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.texto-superpuesto h2 {
+    animation: fadeInUp 1.4s ease-out;
+}
+
+/* Bienvenida section */
+.bienvenida {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width:822px) {
     header {
         flex-direction: column;
